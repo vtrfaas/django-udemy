@@ -20,5 +20,5 @@ from generator import views
 urlpatterns = [
     path('', views.home),
     #Com password colocamos essa barra a mais
-    path('generatedpassword/', views.password, name='password')
+    path('password/', views.password, name='password')
 ]
