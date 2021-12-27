@@ -1,0 +1,16 @@
+<!-- Criamos a pasta template e colocamos o nome do projeto por padrão para facilitar a localização posteriomente -->
+
+<h1>Generated Password</h1>
+
+<!-- O framework resolve o nome para nós -->
+<form action="{% url 'password' %}">
+    <select name="length">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+
+    <input type="submit" value="Generated Password"/>
+</form>
+
+<!--{{ password }}-->
