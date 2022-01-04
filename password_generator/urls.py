@@ -18,7 +18,8 @@ from django.urls import path
 from generator import views
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
     #Com password colocamos essa barra a mais
-    path('password/', views.password, name='password')
+    path('password/', views.password, name='password'),
+    path('about/', views.about, name='about')
 ]
